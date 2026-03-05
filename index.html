@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipin | Backend Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Vipin, a Backend Developer specializing in Core PHP, Laravel, and CodeIgniter.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="container nav-content">
+            <a href="#home" class="logo">Vipin<span>.dev</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-elements">
+            <div class="blob shape-1"></div>
+            <div class="blob shape-2"></div>
+            <div class="blob shape-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="name">Vipin.</h1>
+                <h2 class="title">I build robust backends.</h2>
+                <p class="bio">
+                    Specialized in building scalable, secure, and performant web applications using 
+                    <span class="highlight php-color">Core PHP</span>, 
+                    <span class="highlight laravel-color">Laravel</span>, and 
+                    <span class="highlight ci-color">CodeIgniter</span>.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    <a href="resume.pdf" class="btn btn-outline" download title="Download Resume">
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <!-- Code Snippet Card -->
+                <div class="glass-card profile-card fade-in">
+                    <div class="code-snippet">
+                        <pre><code>
+<span class="keyword">class</span> <span class="class-name">Developer</span> {
+    <span class="keyword">public</span> <span class="type">string</span> $name = <span class="string">'Vipin'</span>;
+    <span class="keyword">public</span> <span class="type">array</span> $skills = [
+        <span class="string">'PHP'</span>, <span class="string">'Laravel'</span>, <span class="string">'CodeIgniter'</span>
+    ];
+    
+    <span class="keyword">public function</span> <span class="function">buildAwesomeApps</span>(): <span class="type">bool</span> {
+        <span class="keyword">return</span> <span class="boolean">true</span>;
+    }
+}
+                        </code></pre>
+                    </div>
+                </div>
+
+                <!-- Profile Photo Option (Uncomment and add your image path) -->
+                <div class="profile-photo-container fade-in delay-1">
+                    <div class="photo-frame placeholder">
+                        <img src="https://via.placeholder.com/400x400/161b22/8b949e?text=Your+Photo+Here" alt="Vipin" id="profileImage">
+                    </div>
+                    <!-- Fun floating technical icons around the image -->
+                    <div class="floating-icon i-php" title="Core PHP"><i class="fab fa-php"></i></div>
+                    <div class="floating-icon i-laravel" title="Laravel"><i class="fab fa-laravel"></i></div>
+                    <div class="floating-icon i-mysql" title="MySQL"><i class="fas fa-database"></i></div>
+                    <div class="floating-icon i-mongo" title="MongoDB"><i class="fas fa-leaf"></i></div>
+                    <div class="floating-icon i-api" title="REST API"><i class="fas fa-network-wired"></i></div>
+                    <div class="floating-icon i-js" title="JavaScript"><i class="fab fa-js"></i></div>
+                    <div class="floating-icon i-css" title="CSS3"><i class="fab fa-css3-alt"></i></div>
+                    <div class="floating-icon i-html" title="HTML5"><i class="fab fa-html5"></i></div>
+                    <div class="floating-icon i-bootstrap" title="Bootstrap"><i class="fab fa-bootstrap"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text glass-card fade-in">
+                    <h3>Transforming Ideas into Solid Architecture</h3>
+                    <p>
+                        I am a passionate backend developer with a deep understanding of server-side logic and database architecture. 
+                        My journey in web development started with <strong class="php-color">Core PHP</strong>, and over the years, I have architected and deployed numerous solutions from the ground up.
+                    </p>
+                    <p>
+                        I adopted modern frameworks like <strong class="laravel-color">Laravel</strong> and <strong class="ci-color">CodeIgniter</strong> to build elegant, maintainable, and highly functional web applications. Whether it's crafting complex API endpoints, optimizing database queries, or integrating third-party services, I focus on delivering clean code that scales.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4 class="counter" data-target="5">0</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="counter" data-target="30">0</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="counter" data-target="15">0</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual fade-in delay-1">
+                    <div class="tech-stack-visual">
+                        <div class="orbit-center">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="orbit-icon icon-php"><i class="fab fa-php"></i></div>
+                        <div class="orbit-icon icon-laravel"><i class="fab fa-laravel"></i></div>
+                        <div class="orbit-icon icon-db"><i class="fas fa-database"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-alt">
+        <div class="container fade-in text-center">
+            <h2 class="section-title">Technical Expertise</h2>
+        </div>
+        
+        <div class="container">
+            
+            <div class="skills-container">
+                <div class="skill-category glass-card scale-in">
+                    <div class="category-header">
+                        <i class="fab fa-php php-color"></i>
+                        <h3>Backend Masterpieces</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Core PHP</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="95%" style="background: var(--php-color)"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Laravel</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="90%" style="background: var(--laravel-color)"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CodeIgniter</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="85%" style="background: var(--ci-color)"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card scale-in delay-1">
+                    <div class="category-header">
+                        <i class="fas fa-database text-primary"></i>
+                        <h3>Data & Infrastructure</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL / MariaDB</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="90%" style="background: var(--primary-color)"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="80%" style="background: var(--laravel-color)"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>RESTful APIs</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="95%" style="background: var(--php-color)"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git & Version Control</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar"><div class="progress" data-width="85%" style="background: var(--ci-color)"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container fade-in text-center">
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+        
+        <div class="container">
+            
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card scale-in">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-gradient-laravel">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Core API</h3>
+                        <p>A highly scalable REST API built with Laravel for a multi-vendor e-commerce platform. Features JWT authentication, Redis caching, and Stripe payment integration.</p>
+                        <div class="project-tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Redis</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card scale-in delay-1">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-gradient-ci">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Inventory Management System</h3>
+                        <p>A legacy web application built from scratch using CodeIgniter 3. Features role-based access control, barcode generation, and comprehensive reporting dashboards.</p>
+                        <div class="project-tags">
+                            <span>CodeIgniter</span>
+                            <span>Bootstrap</span>
+                            <span>jQuery</span>
+                            <span>PDF Gen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card scale-in delay-2">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-gradient-php">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Custom CMS Platform</h3>
+                        <p>A bespoke Content Management System created in pure Core PHP utilizing OOP principles, MVC architecture pattern, and custom ORM for optimized database queries.</p>
+                        <div class="project-tags">
+                            <span>Core PHP</span>
+                            <span>OOP</span>
+                            <span>MVC Architecture</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section bg-alt">
+        <div class="container fade-in text-center">
+            <h2 class="section-title">Get In Touch</h2>
+        </div>
+
+        <div class="container">
+            <div class="contact-wrapper glass-card fade-in delay-1">
+                <div class="contact-info">
+                    <h3>Let's build something amazing together</h3>
+                    <p>Whether you have an idea for a project or just want to chat, feel free to shoot me an email!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon-wrapper"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hello@vipin.dev">hello@vipin.dev</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-wrapper"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-wrapper"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Available for Remote Work</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required class="form-control" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required class="form-control" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required class="form-control" placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="logo">Vipin<span>.dev</span></a>
+                <p>&copy; <span id="year"></span> Vipin. Handcrafted with <i class="fas fa-heart" style="color: var(--laravel-color);"></i> & Code.</p>
+                <div class="back-to-top" id="backToTop">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Switcher Drawer -->
+    <div class="theme-switcher" id="themeSwitcher">
+        <div class="theme-toggle-btn" id="themeToggleBtn">
+            <i class="fas fa-palette"></i>
+        </div>
+        <div class="theme-content">
+            <h4>Color Themes</h4>
+            <div class="theme-options">
+                <div class="theme-color" data-theme="default" style="background: #00e676" title="Default Green"></div>
+                <div class="theme-color" data-theme="blue" style="background: #0ea5e9" title="Ocean Blue"></div>
+                <div class="theme-color" data-theme="purple" style="background: #a855f7" title="Amethyst"></div>
+                <div class="theme-color" data-theme="orange" style="background: #f97316" title="Sunset"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
