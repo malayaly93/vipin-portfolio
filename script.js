@@ -201,4 +201,21 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         setTheme('default');
     }
+    // Curriculum Projects Toggle
+    const curriculumItems = document.querySelectorAll('.curriculum-item');
+    curriculumItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const rowId = item.getAttribute('data-id');
+            const descRow = document.getElementById(`desc-${rowId}`);
+            
+            // Toggle active class on the clicked row
+            item.classList.toggle('active');
+            
+            // Toggle active class on the corresponding description row
+            if (descRow) {
+                descRow.classList.toggle('active');
+            }
+        });
+    });
+
 });

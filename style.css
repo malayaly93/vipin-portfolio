@@ -788,20 +788,107 @@ img {
     transform: scale(1.1);
 }
 
+/* Curriculum Projects Table */
+.curriculum-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.curriculum-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: left;
+}
+
+.curriculum-table th,
+.curriculum-table td {
+    padding: 1.2rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.curriculum-table th {
+    font-family: var(--font-heading);
+    color: var(--laravel-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.curriculum-table td {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.curriculum-table tr:last-child td {
+    border-bottom: none;
+}
+
+.curriculum-table tbody tr.curriculum-item {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.curriculum-table tbody tr.curriculum-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.curriculum-table tbody tr.description-row {
+    display: none;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.curriculum-table tbody tr.description-row.active {
+    display: table-row;
+}
+
+.curriculum-table tbody tr.description-row td {
+    padding: 0;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.description-content {
+    padding: 1.2rem;
+    padding-left: 3rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 3px solid var(--primary-color);
+}
+
+.toggle-icon {
+    width: 30px;
+    text-align: center;
+    color: var(--laravel-color);
+    transition: transform 0.3s ease;
+}
+
+tr.curriculum-item.active .toggle-icon i {
+    transform: rotate(45deg);
+    color: var(--primary-color);
+}
+
+.curriculum-table .tech-stack {
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}
+
 .project-links {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(13, 17, 23, 0.8);
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     opacity: 0;
     transition: opacity 0.3s ease;
-    backdrop-filter: blur(5px);
 }
 
 .project-card:hover .project-links {
@@ -996,6 +1083,65 @@ img {
 .submit-btn {
     width: 100%;
     margin-top: 1rem;
+}
+
+/* Education Timeline styling */
+
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--glass-border);
+}
+
+.edu-item {
+    position: relative;
+}
+
+.edu-item::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--laravel-color);
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.edu-year {
+    font-size: 0.85rem;
+    color: var(--laravel-color);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    font-family: var(--font-mono);
+}
+
+.edu-details h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.2rem;
+}
+
+.edu-details p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.edu-score {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 4px;
+    color: var(--text-primary);
 }
 
 /* Footer */
